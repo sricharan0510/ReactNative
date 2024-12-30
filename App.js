@@ -1,20 +1,45 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-
+import { StyleSheet, Image, Text, ScrollView, View, TouchableOpacity, TextInput, ActivityIndicator, Button, FlatList } from 'react-native';
+import StudentDetails from './Components/studentDetails'
+ 
 export default function App() {
+  const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,];
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <View style={styles.container}>
+
+        {/* <Text style={{fontSize: 30}}>Lord Ganesha!</Text>  */}
+
+        {/* <Image source={require('./assets/ganesh.jpg')} style={{ width: 500, height: 500 }} /> */}
+        {/* <Image source={{ uri: "https://www.svtsydney.org/wp-content/uploads/2019/05/Lord_Ganesha-min.jpg" }}
+        style={{ width: 300, height: 300 }} />   */}
+
+        {/* <TextInput placeholder="Enter your name" style={{ padding: 10, borderWidth: 1 }}/> */}
+
+        {/* <FlatList data={data} renderItem={({ item }) => <Text style={{ fontSize: 30 }}>{item}</Text>} /> */}
+
+        {/* <Button title="Click Me" onPress={() => console.log("Button Clicked")} /> */}
+
+        {/* <TouchableOpacity onPress={() => console.log("Button Clicked")}>
+        <Text>Click Me</Text>
+      </TouchableOpacity> */}
+
+        {/* <ActivityIndicator size="large" color="red" /> */}
+
+        <StudentDetails />
+
+        {/* <StatusBar style="auto" /> */}
+      </View>
+    </>
   );
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    gap: 20,
     alignItems: 'center',
     justifyContent: 'center',
+    fontSize: 30,
+    backgroundColor: '#f0f0f0',
   },
 });
