@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Image, Text, ScrollView, View, TouchableOpacity, TextInput, ActivityIndicator, Button, FlatList } from 'react-native';
 import StudentDetails from './Components/studentDetails'
+import Tables from './Components/Tables'
  
 export default function App() {
   const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,];
@@ -26,7 +27,8 @@ export default function App() {
 
         {/* <ActivityIndicator size="large" color="red" /> */}
 
-        <StudentDetails />
+        {/* <StudentDetails /> */}
+        <Tables />
 
         {/* <StatusBar style="auto" /> */}
       </View>
