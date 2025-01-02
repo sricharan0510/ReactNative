@@ -8,6 +8,7 @@ const Tables = () => {
         ['Praveen', '19', '4220', 'Velvein'],
         ['Charann', '21', '4250', 'Hyderabad'],
         ['Karthik', '20', '4254', 'Kakinada'],
+        ['Kesava', '22', '4256', 'Vijayawada'],
     ]; 
     return (
         <ScrollView horizontal={true}>
