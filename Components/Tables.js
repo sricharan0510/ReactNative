@@ -9,12 +9,13 @@ const Tables = () => {
         ['Charann', '21', '4250', 'Hyderabad'],
         ['Karthik', '20', '4254', 'Kakinada'],
         ['Kesava', '22', '4256', 'Vijayawada'],
-    ]; 
+    ];
     return (
         <ScrollView horizontal={true}>
             <View style={styles.container}>
                 <Table borderStyle={{ borderWidth: 1, borderColor: 'black' }}>
-                    <Row data={tableHead} style={[styles.tableContent, {backgroundColor: '#01987A'}]} textStyle={{ fontSize: 20, textAlign: 'center', fontWeight: '600', color: 'white' }} />
+                    <Row data={tableHead} style={[styles.tableContent, { backgroundColor: '#01987A' }]} textStyle={{ fontSize: 20, textAlign: 'center', fontWeight: '600', color: 'white' }} />
+                    {/* <Rows data={tableData} style={styles.tableContent} textStyle={{ fontSize: 16, textAlign: 'center' }} /> */}
                     {tableData.map((rowData, index) => (
                         <Row key={index} data={rowData} style={[styles.tableContent, index%2 && {backgroundColor: '#DBDBDB'} ]} textStyle={{ fontSize: 16, textAlign: 'center' }} />
                     ))}
