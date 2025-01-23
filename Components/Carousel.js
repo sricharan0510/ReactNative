@@ -8,7 +8,6 @@ const Carousel = () => {
 
    return(
     <SafeAreaView>
-      <Text>HAI</Text>
       <FlatList 
         data = {Info}
         renderItem={({item})=>(
