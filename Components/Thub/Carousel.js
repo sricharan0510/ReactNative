@@ -8,6 +8,7 @@ const Carousel = () => {
 
    return(
     <SafeAreaView>
+      <Text style={{color: "green", fontSize: 10, fontWeight: "bold", marginLeft: 10}}>Digi Wall</Text>
       <FlatList 
         data = {Info}
         renderItem={({item})=>(
