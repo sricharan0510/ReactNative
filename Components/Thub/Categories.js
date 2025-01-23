@@ -14,29 +14,27 @@ const Categories = () => {
         { id: "8", iconName: "help", itsName: "Help" },
         { id: "9", iconName: "info", itsName: "Info" },
     ];
-    const [showAll, setShowAll] = useState(true); 
+    const [showAll, setShowAll] = useState(true);
 
     const toggleDisplay = () => {
-        setShowAll(!showAll); 
+        setShowAll(!showAll);
     };
-
-    
 
     return (
         <>
             <View>
                 <View style={styles.buttonContainer}>
-                <Text style={styles.text}>Categories :</Text>
+                    <Text style={styles.text}>Categories</Text>
                     <TouchableOpacity style={styles.button} onPress={toggleDisplay}>
                         <Text style={styles.buttonText}>
-                            {showAll ? "More" : "Less"} 
+                            {showAll ? "Show All" : "Show Less"}
                         </Text>
                     </TouchableOpacity>
                 </View>
             </View>
             <View style={styles.containerOut}>
                 <View style={styles.container}>
-                    {data.slice(0 , showAll ? 8 : data.length).map((item, index) => (
+                    {data.slice(0, showAll ? 8 : data.length).map((item, index) => (
                         <View style={styles.iconOut} key={index}>
                             <View style={styles.inconIn}>
                                 <Icon name={item.iconName} size={40} color="black" />
@@ -53,7 +51,7 @@ const Categories = () => {
 const styles = StyleSheet.create({
     text: {
         color: "green",
-        fontSize: 17,
+        fontSize: 16,
         fontWeight: "bold",
         marginLeft: 10,
     },
@@ -64,24 +62,25 @@ const styles = StyleSheet.create({
     },
     button: {
         backgroundColor: "green",
-        // paddingLeft: 10,paddingRight:10,
-        paddingBottom:5,paddingTop:5,
-        width:70,
+        paddingBottom: 5, paddingTop: 5,
+        width: 90,
         borderRadius: 5,
-        marginHorizontal: 10,
+        marginHorizontal: 15,
     },
     buttonText: {
         color: "white",
         fontWeight: "bold",
-        textAlign : 'center'
+        textAlign: 'center'
     },
     container: {
-        width: '90%',
+        width: '100%',
         display: 'flex',
         alignItems: 'center',
         flexDirection: 'row',
         flexWrap: 'wrap',
+        gap: 15,
         padding: 10,
+        justifyContent: 'center',
     },
     containerOut: {
         width: '100%',
@@ -90,7 +89,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     iconOut: {
-        margin: 8,
+        margin: 10,
     },
     inconIn: {
         width: 60,
@@ -105,7 +104,8 @@ const styles = StyleSheet.create({
     iconText: {
         textAlign: 'center',
         fontWeight: 'bold',
-        fontSize:10,
+        marginTop: 5,
+        fontSize: 12,
         color: 'green',
     },
 });

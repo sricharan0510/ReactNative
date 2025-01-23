@@ -20,9 +20,7 @@ const RnCard = () => {
 
 const styles = StyleSheet.create({
     container: {
-        width: '100%',
-        height: 150,
-        // borderWidth: 1,
+        height: 180,
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -30,7 +28,7 @@ const styles = StyleSheet.create({
     card: {
         width: '90%',
         height: '90%',
-        // borderWidth: 1
+        backgroundColor: 'yellow'
     },
     imageIn: {
         width: '100%',  

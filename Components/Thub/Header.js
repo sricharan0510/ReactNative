@@ -11,42 +11,30 @@ export default function Header() {
                     resizeMode="contain"
                 />
             </View>
-            {/* <Text style={styles.text}>Technical Hub</Text> */}
         </View>
     );
 }
 
 const styles = StyleSheet.create({
     container: {
-        height: 50,
+        height: 120,
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent:'center'
         // borderWidth: 1,
     },
-    text: {
-        width: '70%',
-        fontSize: 17,
-        // borderWidth: 1,
-        display : 'flex',
-        justifyContent : 'center',
-        alignItems : 'center',
-        textAlign :'center'
-    },
     imageOut:{
-        width: '30%',
+        width: '40%',
         height: '90%',
         fontSize: 30,
-        // borderWidth: 1,
         display : 'flex',
         justifyContent : 'center',
         alignItems : 'center',
     },
     imageIn: {
-        width: '90%',
-        height: '90%',
-        // borderWidth: 1,  
+        width: '80%',
+        height: '80%',
         marginLeft: '5%',
     }
 });
