@@ -4,7 +4,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 
 const Carousel = () => {
   const {width , height} = Dimensions.get('screen')
-  const Info = ["Sricharan", "Praveen", "Charan"]
+  const Info = ["Sricharan", "Praveen", "Charan", "Kittu"]
 
    return(
     <SafeAreaView>
