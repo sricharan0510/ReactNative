@@ -2,7 +2,11 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Image, Text, ScrollView, View, TouchableOpacity, TextInput, ActivityIndicator, Button, FlatList } from 'react-native';
 import StudentDetails from './Components/studentDetails'
 import Tables from './Components/Tables'
- 
+import Carousel from './Components/Carousel'
+
+import { SafeAreaProvider } from "react-native-safe-area-context";
+import SafeArea from './Components/SafeArea';
+
 export default function App() {
   const data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,];
   return (
@@ -27,10 +31,25 @@ export default function App() {
 
         {/* <ActivityIndicator size="large" color="red" /> */}
 
+
+        {/* ============================================================================================== */}
+
+
         {/* <StudentDetails /> */}
-        <Tables />
+        {/* <Tables /> */}
+
+        {/* <SafeAreaProvider>
+          <SafeArea />
+        </SafeAreaProvider> */}
+
+        {/* ============================================================================================== */}
 
         {/* <StatusBar style="auto" /> */}
+
+        {/* ==================================================================================== */}
+
+        <Carousel />
+        
       </View>
     </>
   );
