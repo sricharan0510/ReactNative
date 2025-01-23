@@ -12,8 +12,8 @@ const Carousel = () => {
         data = {Info}
         renderItem={({item})=>(
           <View style={{height:200,width:width,justifyContent:'center',alignItems:'center'}}>
-            <View style={{width:"90%",height:"90%",justifyContent:'center',alignItems:"center",backgroundColor:'black'}}>
-            <Text style={{color:"white",fontSize:50}}>{item}</Text>
+            <View style={{width:"90%",height:"90%",justifyContent:'center',alignItems:"center", borderRadius:30, borderWidth: 2, borderColor: 'green'}}>
+            <Text style={{fontSize:50}}>{item}</Text>
             </View>
          </View>
         )}
