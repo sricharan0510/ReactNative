@@ -2,7 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Image, Text, ScrollView, View, TouchableOpacity, TextInput, ActivityIndicator, Button, FlatList } from 'react-native';
 import StudentDetails from './Components/studentDetails'
 import Tables from './Components/Tables'
-import Carousel from './Components/Carousel'
+import Main from './Components/Thub/Main'
 
 import { SafeAreaProvider } from "react-native-safe-area-context";
 import SafeArea from './Components/SafeArea';
@@ -48,8 +48,8 @@ export default function App() {
 
         {/* ==================================================================================== */}
 
-        <Carousel />
-        
+        <Main />
+
       </View>
     </>
   );
