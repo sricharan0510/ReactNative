@@ -5,9 +5,7 @@ import { SafeAreaView } from "react-native-safe-area-context";
 const Carousel = () => {
   const {width , height} = Dimensions.get('screen')
   const Info = ["Sricharan", "Praveen", "Charan"]
-  const Fun = (event) => {
-    console.log(Math.round(event.nativeEvent.contentOffset.x/width))
-  }
+
    return(
     <SafeAreaView>
       <Text>HAI</Text>
@@ -23,7 +21,6 @@ const Carousel = () => {
         horizontal
         showsHorizontalScrollIndicator={false}
         pagingEnabled
-        onScroll={(event) => Fun(event)}
       />
     </SafeAreaView>
    )
