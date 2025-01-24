@@ -17,12 +17,11 @@ export default function Header() {
 
 const styles = StyleSheet.create({
     container: {
-        height: 120,
+        height: 110,
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent:'center'
-        // borderWidth: 1,
     },
     imageOut:{
         width: '40%',

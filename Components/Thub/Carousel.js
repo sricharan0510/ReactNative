@@ -7,12 +7,12 @@ const Carousel = () => {
   const Info = ["Sricharan", "Praveen", "Charan", "Kittu"]
 
    return(
-    <SafeAreaView>
+    <View>
       <Text style={{color: "green", fontSize: 16, fontWeight: "bold", marginLeft: 10}}>Digi Wall</Text>
       <FlatList style={{marginTop: 10}}
         data = {Info}
         renderItem={({item})=>(
-          <View style={{height:200,width:width,justifyContent:'center',alignItems:'center'}}>
+          <View style={{height:180,width:width,justifyContent:'center',alignItems:'center'}}>
             <View style={{width:"90%",height:"90%",justifyContent:'center',alignItems:"center", backgroundColor:"green",borderRadius:20}}>
             <Text style={{color: 'white', fontSize:20}}>{item}</Text>
             </View>
@@ -22,7 +22,7 @@ const Carousel = () => {
         showsHorizontalScrollIndicator={false}
         pagingEnabled
       />
-    </SafeAreaView>
+    </View>
    )
 }
 export default Carousel;

@@ -2,21 +2,30 @@ import { Text, View, StyleSheet } from "react-native";
 
 const Footer = () => {
     return (
-        <View style={styles.footerDiv}>
-            <Text style= {styles.text}>Footer</Text>
+        <View style={styles.footerCobtainer}>
+            <View style={styles.footerDiv}>
+                <Text style={styles.text}>Footer</Text>
+            </View>
         </View>
     )
 }
 
 const styles = StyleSheet.create({
+    footerCobtainer : {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: 10,
+    },
     footerDiv: {
         backgroundColor: 'green',
-        width: '100%',
+        width: '90%',
         height: 50,
+        borderRadius: 10,
     },
-    text : {
+    text: {
         color: 'white',
-        fontSize: 20,
+        fontSize: 15,
         textAlign: 'center',
         marginTop: 10,
     }

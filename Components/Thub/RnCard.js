@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View, Image } from "react-native";  // Added Image import
+import { StyleSheet, Text, View, Image } from "react-native";  
 import { Card } from "react-native-paper";
 
 const RnCard = () => {
