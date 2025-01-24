@@ -1,5 +1,4 @@
-import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
-import Icon from "react-native-vector-icons/MaterialIcons";
+import { Text, View, StyleSheet } from "react-native";
 
 const Footer = () => {
     return (

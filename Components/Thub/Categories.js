@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
+import { Text, View, StyleSheet } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
 
 const Categories = () => {
@@ -10,34 +10,23 @@ const Categories = () => {
         { id: "4", iconName: "notifications", itsName: "Notifications" },
         { id: "5", iconName: "favorite", itsName: "Favorites" },
         { id: "6", iconName: "search", itsName: "Search" },
-        { id: "7", iconName: "shopping-cart", itsName: "Cart" },
+        { id: "7", iconName: "info", itsName: "Info" },
         { id: "8", iconName: "help", itsName: "Help" },
-        { id: "9", iconName: "info", itsName: "Info" },
     ];
-    const [showAll, setShowAll] = useState(true);
-
-    const toggleDisplay = () => {
-        setShowAll(!showAll);
-    };
 
     return (
         <>
             <View>
                 <View style={styles.buttonContainer}>
                     <Text style={styles.text}>Categories</Text>
-                    <TouchableOpacity style={styles.button} onPress={toggleDisplay}>
-                        <Text style={styles.buttonText}>
-                            {showAll ? "Show All" : "Show Less"}
-                        </Text>
-                    </TouchableOpacity>
                 </View>
             </View>
             <View style={styles.containerOut}>
                 <View style={styles.container}>
-                    {data.slice(0, showAll ? 8 : data.length).map((item, index) => (
+                    {data.map((item, index) => (
                         <View style={styles.iconOut} key={index}>
                             <View style={styles.inconIn}>
-                                <Icon name={item.iconName} size={40} color="black" />
+                                <Icon name={item.iconName} size={35} color="black" />
                             </View>
                             <Text style={styles.iconText}>{item.itsName}</Text>
                         </View>
@@ -56,21 +45,7 @@ const styles = StyleSheet.create({
         marginLeft: 10,
     },
     buttonContainer: {
-        flexDirection: "row",
         marginTop: 10,
-        justifyContent: 'space-between',
-    },
-    button: {
-        backgroundColor: "green",
-        paddingBottom: 5, paddingTop: 5,
-        width: 90,
-        borderRadius: 5,
-        marginHorizontal: 15,
-    },
-    buttonText: {
-        color: "white",
-        fontWeight: "bold",
-        textAlign: 'center'
     },
     container: {
         width: '100%',
