@@ -2,8 +2,9 @@ import React from "react";
 import { StyleSheet, SafeAreaView, View, StatusBar , Text} from "react-native";
 import Header from "./Header";
 import RnCard from "./RnCard";
-import Catogories from "./Categories";
-import Corosel from "./Carousel";
+import Categories from "./Categories";
+import Carousel from "./Carousel";
+import Footer from "./Footer";
 
 
 const Main = () => {
@@ -15,8 +16,9 @@ const Main = () => {
                 <Text style = {styles.welcomeIn}>Welcome Sricharan ,</Text>
             </View>
             <RnCard />
-            <Catogories />
-            <Corosel style={styles.c} />
+            <Categories />
+            <Carousel />
+            <Footer />
         </SafeAreaView>
         <StatusBar />
         </>
@@ -38,9 +40,6 @@ const styles = StyleSheet.create({
         marginBottom: 10,
         color:'green'
     },
-    c:{
-        marginTop: 100
-    }
 });
 
 export default Main;
