@@ -1,6 +1,7 @@
 import React from "react";
 import { StyleSheet, Text, View, Image } from "react-native";  
 import { Card } from "react-native-paper";
+import topImage from "../../assets/topImage.png";
 
 const RnCard = () => {
     return (
@@ -8,7 +9,7 @@ const RnCard = () => {
             <View style={styles.container}>
                 <Card style={styles.card}>
                     <Card.Cover
-                        // source={{ uri: 'https://maya.technicalhub.io/assets/images/logo/logo-dark.png' }}
+                        source={topImage}
                         style={styles.imageIn}
                         resizeMode="contain"  
                     />
