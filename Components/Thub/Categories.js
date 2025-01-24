@@ -1,17 +1,20 @@
 import React, { useState } from "react";
 import { Text, View, StyleSheet } from "react-native";
-import Icon from "react-native-vector-icons/MaterialIcons";
+import MaterialIcons from "react-native-vector-icons/MaterialIcons";
+import FontAwesome6 from "react-native-vector-icons/FontAwesome6";
+import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 
 const Categories = () => {
+
     const data = [
-        { id: "1", iconName: "home", itsName: "Home" },
-        { id: "2", iconName: "settings", itsName: "Settings" },
-        { id: "3", iconName: "account-circle", itsName: "Account" },
-        { id: "4", iconName: "notifications", itsName: "Notifications" },
-        { id: "5", iconName: "favorite", itsName: "Favorites" },
-        { id: "6", iconName: "search", itsName: "Search" },
-        { id: "7", iconName: "info", itsName: "Info" },
-        { id: "8", iconName: "help", itsName: "Help" },
+        { id: 1, name: "Programs", icon: "microsoft-visual-studio-code", tag: "MaterialCommunityIcons" },
+        { id: 2, name: "Courses", icon: "graduation-cap", tag: "FontAwesome6" },
+        { id: 3, name: "Certifications", icon: "certificate", tag: "MaterialCommunityIcons" },
+        { id: 4, name: "OwlCoder", icon: "owl", tag: "MaterialCommunityIcons" },
+        { id: 5, name: "Placements", icon: "chess-pawn", tag: "FontAwesome6" },
+        { id: 6, name: "Team", icon: "people-group", tag: "FontAwesome6" },
+        { id: 7, name: "Partners", icon: "handshake", tag: "FontAwesome6" },
+        { id: 8, name: "Registration", icon: "registration", tag: "MaterialIcons" },
     ];
 
     return (
@@ -26,11 +29,17 @@ const Categories = () => {
                     {data.map((item, index) => (
                         <View style={styles.iconOut} key={index}>
                             <View style={styles.inconIn}>
-                                <Icon name={item.iconName} size={35} color="black" />
+                                {React.createElement(
+                                    item.tag === "MaterialIcons" ? MaterialIcons :
+                                        item.tag === "FontAwesome6" ? FontAwesome6 :
+                                            MaterialCommunityIcons,
+                                    { name: item.icon, size: 25, color: "black" }
+                                )}
                             </View>
-                            <Text style={styles.iconText}>{item.itsName}</Text>
+                            <Text style={styles.iconText}>{item.name}</Text>
                         </View>
                     ))}
+
                 </View>
             </View>
         </>
@@ -71,8 +80,8 @@ const styles = StyleSheet.create({
         height: 60,
         justifyContent: "center",
         alignItems: "center",
-        borderBottomRightRadius: 10,
-        borderTopLeftRadius: 10,
+        borderBottomRightRadius: 15,
+        borderTopLeftRadius: 15,
         borderWidth: 3,
         borderColor: 'green',
     },

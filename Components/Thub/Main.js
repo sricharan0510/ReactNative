@@ -11,14 +11,16 @@ const Main = () => {
     return (
         <>
             <SafeAreaView style={styles.container}>
-                <Header />
-                <View style={styles.welcomeOt}>
-                    <Text style={styles.welcomeIn}>Welcome Sricharan ,</Text>
+                <Header style={styles.headerStyle} />
+                <View style={styles.content}>
+                    <View style={styles.welcomeOt}>
+                        <Text style={styles.welcomeIn}>Welcome Sricharan ,</Text>
+                    </View>
+                    <RnCard />
+                    <Categories />
+                    <Carousel />
                 </View>
-                <RnCard />
-                <Categories />
-                <Carousel />
-                <Footer />
+                <Footer style={styles.footerStyle}/>
             </SafeAreaView>
             <StatusBar />
         </>
@@ -29,11 +31,17 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
     },
-    welcomeOt: {
-        color: 'white',
+    headerStyle: {
+        flex: 1,
+    },
+    content: {
+        flex: 8,
+    },
+    footerStyle: {
+        flex: 1,
     },
     welcomeIn: {
-        fontSize: 15,
+        fontSize: 18,
         fontWeight: 'bold',
         marginTop: 2,
         marginLeft: 15,

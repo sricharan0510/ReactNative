@@ -20,7 +20,7 @@ const RnCard = () => {
 
 const styles = StyleSheet.create({
     container: {
-        height: 180,
+        height: 190,
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
