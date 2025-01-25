@@ -9,7 +9,7 @@ const RnCard = () => {
             <View style={styles.container}>
                 <Card style={styles.card}>
                     <Card.Cover
-                        source={topImage}
+                        // source={topImage}
                         style={styles.imageIn}
                         resizeMode="contain"  
                     />
