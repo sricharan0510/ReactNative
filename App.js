@@ -1,13 +1,18 @@
 import { StyleSheet, View } from 'react-native';
 import Main from './Components/Thub/Main'
+import AnimatedComponent from './Components/AnimatedComponent'
 
 export default function App() {
   return (
     <>
-      <View style={styles.container}>
+      {/* <View style={styles.container}>
         <Main />
+      </View> */}
 
-      </View>
+
+      <AnimatedComponent />
+
+      
     </>
   );
 }
@@ -21,3 +26,5 @@ const styles = StyleSheet.create({
     backgroundColor: '#f0f0f0',
   },
 });
+
+
