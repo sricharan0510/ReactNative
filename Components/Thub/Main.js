@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     },
     welcomeIn: {
         fontSize: 18,
-        fontWeight: 'bold',
+        fontWeight: '900',
         marginTop: 2,
         marginLeft: 15,
         marginBottom: 10,
