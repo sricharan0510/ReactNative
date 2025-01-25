@@ -29,7 +29,6 @@ const styles = StyleSheet.create({
     card: {
         width: '90%',
         height: '90%',
-        backgroundColor: 'yellow'
     },
     imageIn: {
         width: '100%',  

@@ -14,7 +14,7 @@ const Categories = () => {
         { id: 5, name: "Placements", icon: "chess-pawn", tag: "FontAwesome6" },
         { id: 6, name: "Team", icon: "people-group", tag: "FontAwesome6" },
         { id: 7, name: "Partners", icon: "handshake", tag: "FontAwesome6" },
-        { id: 8, name: "Registration", icon: "registration", tag: "MaterialIcons" },
+        { id: 8, name: "Registration", icon: "app-registration", tag: "MaterialIcons" },
     ];
 
     return (
