@@ -6,7 +6,7 @@ import { useNavigation } from "@react-navigation/native";
 const Screen1 = () =>{
     const navigation = useNavigation();
     const Fun=()=>{
-        navigation.navigate('Screen2',{name:"B.hanumanthu"})
+        navigation.navigate('Screen2',{name:"Sricharan"})
     }
     return(
         <View>
