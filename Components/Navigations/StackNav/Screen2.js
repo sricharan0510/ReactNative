@@ -2,7 +2,6 @@ import React from "react";
 import { View,Text } from "react-native";
 import { Button } from "react-native-paper";
 import { useNavigation,useRoute } from "@react-navigation/native";
-import { use } from "react";
 
 const Screen2 = () =>{
     const navigation  = useNavigation()
