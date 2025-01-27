@@ -5,30 +5,32 @@ import Screen3 from "./Screen3"
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import Icon from 'react-native-vector-icons/FontAwesome'
+import { SafeAreaView } from "react-native-safe-area-context";
 
-const Nav = () =>{
+const Nav = () => {
     const Stack = createStackNavigator();
-    return(
+    return (
+        // <SafeAreaView style={{ flex: 1 }}>
         <NavigationContainer>
-            <Stack.Navigator 
+            <Stack.Navigator
                 screenOptions={{
-                    headerStyle:{
-                        backgroundColor:'green',
-                        height:200
+                    headerStyle: {
+                        backgroundColor: 'green',
+                        height: 200
                     },
-                    headerTintColor :"white",
-                    headerTitleAlign : "center",
+                    headerTintColor: "white",
+                    headerTitleAlign: "center",
                     // headerRight:() => (
                     //     <Icon name="bell" color="yellow" size={20} style={{marginRight:15}}/>
                     // ),
                     // headerLeft:() => (
                     //     <></>
                     // ),
-                    headerTitleStyle:{
-                        fontWeight:900,
-                        fontSize:30
+                    headerTitleStyle: {
+                        fontWeight: 900,
+                        fontSize: 30
                     },
-                    headerShown : true
+                    headerShown: true
                 }}
             >
                 <Stack.Screen name="Technical Hub" component={Screen1} />
@@ -37,6 +39,7 @@ const Nav = () =>{
             </Stack.Navigator>
 
         </NavigationContainer>
+        // </SafeAreaView>
     )
 
 }
