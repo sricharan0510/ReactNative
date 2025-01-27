@@ -14,7 +14,7 @@ const Main = () => {
                 <Header style={styles.headerStyle} />
                 <View style={styles.content}>
                     <View style={styles.welcomeOt}>
-                        <Text style={styles.welcomeIn}>Welcome Sricharan ,</Text>
+                        <Text style={styles.welcomeIn}>Welcome Sricharan,</Text>
                     </View>
                     <RnCard />
                     <Categories />
