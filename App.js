@@ -5,12 +5,12 @@ import AnimatedComponent from './Components/AnimatedComponent'
 export default function App() {
   return (
     <>
-      {/* <View style={styles.container}>
+      <View style={styles.container}>
         <Main />
-      </View> */}
+      </View>
 
 
-      <AnimatedComponent />
+      {/* <AnimatedComponent /> */}
 
       
     </>
