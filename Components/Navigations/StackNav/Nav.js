@@ -13,18 +13,18 @@ const Nav = () =>{
             <Stack.Navigator 
                 screenOptions={{
                     headerStyle:{
-                        backgroundColor:'#668738'
+                        backgroundColor:'green',
+                        height:200
                     },
                     headerTintColor :"white",
                     headerTitleAlign : "center",
-                    headerRight:() => (
-                        <Icon name="bell" color="yellow" size={30} style={{marginRight:15}}/>
-                    ),
-                    headerLeft:() => (
-                        <></>
-                    ),
+                    // headerRight:() => (
+                    //     <Icon name="bell" color="yellow" size={20} style={{marginRight:15}}/>
+                    // ),
+                    // headerLeft:() => (
+                    //     <></>
+                    // ),
                     headerTitleStyle:{
-                        color:'red',
                         fontWeight:900,
                         fontSize:30
                     },
@@ -32,8 +32,8 @@ const Nav = () =>{
                 }}
             >
                 <Stack.Screen name="Technical Hub" component={Screen1} />
-                <Stack.Screen name="Screen2" component={Screen2} />
-                <Stack.Screen name="Screen3" component={Screen3} />
+                <Stack.Screen name="Sricharan" component={Screen2} />
+                <Stack.Screen name="Kittu" component={Screen3} />
             </Stack.Navigator>
 
         </NavigationContainer>
