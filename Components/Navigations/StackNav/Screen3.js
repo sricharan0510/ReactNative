@@ -6,7 +6,7 @@ import { useNavigation, useRoute } from "@react-navigation/native";
 const Screen3 = () => {
     const navigation = useNavigation();
     const route = useRoute();
-    console.log(route)
+    console.log(route.name)
     const FunS1 = () => {
         navigation.navigate('Technical Hub')
     }

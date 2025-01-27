@@ -1,12 +1,10 @@
 import React from "react";
 import { View, Text } from "react-native";
 import { Button } from "react-native-paper";
-import { useNavigation, useRoute } from "@react-navigation/native";
+import { useNavigation } from "@react-navigation/native";
 
 const Screen2 = () => {
     const navigation = useNavigation()
-    const route = useRoute();
-    console.log(route)
     const FunS1 = () => {
         navigation.navigate('Technical Hub')
     }
