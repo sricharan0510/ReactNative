@@ -1,16 +1,19 @@
 import { StyleSheet, View } from 'react-native';
 import Main from './Components/Thub/Main'
 import AnimatedComponent from './Components/AnimatedComponent'
+import Nav from './Components/Navigations/StackNav/Nav'
 
 export default function App() {
   return (
     <>
-      <View style={styles.container}>
+      {/* <View style={styles.container}>
         <Main />
-      </View>
+      </View> */}
 
 
       {/* <AnimatedComponent /> */}
+
+      <Nav />
 
       
     </>

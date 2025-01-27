@@ -20,7 +20,7 @@ const Main = () => {
                     <Categories />
                     <Carousel />
                 </View>
-                <Footer style={styles.footerStyle}/>
+                <Footer style={styles.footerStyle} />
             </SafeAreaView>
             <StatusBar />
         </>
