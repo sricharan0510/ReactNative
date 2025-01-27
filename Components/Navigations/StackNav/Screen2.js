@@ -13,7 +13,7 @@ const Screen2 = () => {
     }
     return (
         <View style={{ flex: 1, alignItems: 'center', gap: 20 }}>
-            <Text style={{ fontSize: 20, margin: 10 }}>Screen 2</Text>
+            <Text style={{ fontSize: 20, margin: 10, fontWeight: 'bold' }}>This is Screen 2</Text>
             <Button mode="contained" style={{ width: 200 }} onPress={FunS1} >Move to Screen 1</Button>
             <Button mode="contained" style={{ width: 200 }} onPress={FunS3} >Move to Screen 3</Button>
         </View>
