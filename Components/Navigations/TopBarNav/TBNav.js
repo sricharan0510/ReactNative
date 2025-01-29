@@ -15,7 +15,7 @@ const TBNav = () => {
                 <TopBar.Navigator
                     screenOptions={{
                         tabBarActiveTintColor: "white",
-                        tabBarInactiveTintColor: "silver",
+                        tabBarInactiveTintColor: "grey",
                         tabBarLabelStyle : {
                             fontSize: 18,
                         },
