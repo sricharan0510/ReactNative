@@ -4,7 +4,7 @@ import { Text, StyleSheet, View } from "react-native";
 function Screen2() {
   return (
     <View>
-      <Text style={{textAlign: 'center', margin: 20, fontSize:22, fontWeight: 'bold', backgroundColor: 'black', color:'white', padding: 20}}>Status Screen</Text>
+      <Text style={{textAlign: 'center', margin: 20, fontSize:22, fontWeight: 'bold'}}>Status Screen</Text>
     </View>
   )
 }
