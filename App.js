@@ -1,7 +1,10 @@
 import { StyleSheet, View } from 'react-native';
 import Main from './Components/Thub/Main'
 import AnimatedComponent from './Components/AnimatedComponent'
+
 import Nav from './Components/Navigations/StackNav/Nav'
+
+import TBNav from './Components/Navigations/TopBarNav/TBNav';
 
 export default function App() {
   return (
@@ -13,7 +16,9 @@ export default function App() {
 
       {/* <AnimatedComponent /> */}
 
-      <Nav />
+      {/* <Nav /> */}
+
+      <TBNav />
 
       
     </>
