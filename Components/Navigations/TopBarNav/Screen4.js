@@ -3,8 +3,8 @@ import { Text, StyleSheet, View } from "react-native";
 
 function Screen4() {
   return (
-    <View>
-      <Text style={{textAlign: 'center', margin: 20, fontSize:22, fontWeight: 'bold'}}>COmmunity</Text>
+    <View style = {{flex: 0.8, justifyContent: 'center',alignItems: 'center'}}>
+      <Text style={{fontSize:22, fontWeight: 'bold'}}>COmmunity</Text>
     </View>
   )
 }
