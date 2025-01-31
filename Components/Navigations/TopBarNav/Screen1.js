@@ -44,6 +44,12 @@ const chatlist = [
     name: 'Jayaram',
     rollid: '22MH1A4216',
     message: 'Why?',
+  },
+  {
+    id: 8,
+    name: 'Vishnu',
+    rollid: '22MH1A4259',
+    message: 'Why?',
   }
 ];
 
