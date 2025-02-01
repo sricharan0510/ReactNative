@@ -12,14 +12,11 @@ export default function App() {
         <Main />
       </View> */}
 
-
       {/* <AnimatedComponent /> */}
 
       {/* <Nav /> */}
-
       <TBNav />
 
-      
     </>
   );
 }

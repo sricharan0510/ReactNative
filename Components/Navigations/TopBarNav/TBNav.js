@@ -16,7 +16,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 const Stack = createStackNavigator();
 const TopBar = createMaterialTopTabNavigator();
 
-const TopBarNav = () => (
+const TopBarNav = () => ( 
     <TopBar.Navigator
         screenOptions={{
             tabBarActiveTintColor: "green",
