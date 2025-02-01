@@ -1,5 +1,4 @@
 import { View, Text, Image, ScrollView, Dimensions, TouchableOpacity } from "react-native";
-import { Button } from "react-native-paper";
 import { useNavigation } from "@react-navigation/native";
 
 const chatlist = [
@@ -58,8 +57,8 @@ const date = new Date().getDate() + '/' + (new Date().getMonth() + 1) + '/' + (n
 
 const Screen1 = () => {
   const navigation = useNavigation();
-  const fun = () => {
-    navigation.navigate('ChatScreen');
+  const fun = (name) => {
+    navigation.navigate('ChatScreen', {name});
   }
 
   return (
@@ -69,7 +68,7 @@ const Screen1 = () => {
           <View key={item.id}>
             <View style={{ flexDirection: 'row', padding: 18, borderBottomColor: 'grey', borderBottomWidth: 0.3, width: width }}>
               <Image source={{ uri: `https://info.aec.edu.in/ACET/StudentPhotos/${item.rollid}.jpg` }} style={{ width: 45, height: 45, borderRadius: 50 }} />
-              <TouchableOpacity onPress={fun} >
+              <TouchableOpacity onPress={ () => fun(item.name)} >
                 <View style={{ flex: 1, flexDirection: "row", justifyContent:"space-between", width: width-90}}>
                   <View style={{ marginLeft: 12, gap: 7 }}>
                     <Text style={{ fontSize: 18, fontWeight: '600' }}>{item.name}</Text>

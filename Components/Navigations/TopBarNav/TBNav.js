@@ -49,7 +49,7 @@ const TBNav = () => {
     return (
         <SafeAreaView style={{ flex: 1 }}>
             <NavigationContainer>
-                <Stack.Navigator>
+                <Stack.Navigator initialRouteName="Home">
                     <Stack.Screen name="Home" component={TopBarNav}
                         options={{
                             header: () => (
@@ -61,18 +61,19 @@ const TBNav = () => {
                         }}
                     />
                     <Stack.Screen name="ChatScreen" component={ChatScreen}
-                        options={{
+                        options={({route}) => ({        
                             headerShown: true,
-                            headerTitle: "Chats",
+                            headerTitle: route.params.name,
                             headerStyle: {
                                 backgroundColor: "#fff",
+                                height: 80,
                             },
                             headerTintColor: "black",
                             headerTitleStyle: {
                                 fontSize: 20,
                                 fontWeight: "500",
                             },
-                        }}
+                        })}
                     />
                 </Stack.Navigator>
             </NavigationContainer>
