@@ -12,7 +12,7 @@ const BBNav = () => {
             <BottomTab.Navigator
                 screenOptions={({ route }) => ({
                     headerShown: true,
-                    tabBarActiveTintColor: "green",
+                    tabBarActiveTintColor: "green", 
                     tabBarInactiveTintColor: 'black',
                     tabBarIcon: ({ focused, color }) => {
                         let IconName;
