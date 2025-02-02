@@ -34,7 +34,7 @@ function VideoCalls() {
 
             </ScrollView>
             <View style={styles.addCall}>
-                <MaterialIcons name='add-call' size={25} color={'white'} />
+                <MaterialIcons name='video-call' size={25} color={'white'} />
             </View>
         </View>
 

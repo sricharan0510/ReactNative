@@ -16,7 +16,7 @@ function Screen4() {
                     <FontAwesome name='heart' size={25} color={'green'} />
                 </View>
                 <View style={styles.StatusUpdateTex}>
-                    <Text style={styles.CommunityText}>Add to Favorites</Text>
+                    <Text style={styles.CommunityText}>Add Favorites</Text>
                 </View>
             </View>
             <TopBar.Navigator
@@ -34,7 +34,7 @@ function Screen4() {
                     swipeEnabled: true,
                     tabBarStyle: {
                         backgroundColor: 'white',
-                        height: 80,
+                        height: 75,
                         alignItems: 'center',
                     },
                     lazy: true
@@ -55,10 +55,10 @@ const styles = StyleSheet.create({
         gap: 10,
         borderWidth: 1,
         borderColor: 'white',
-        padding : 15,
+        padding: 15,
         backgroundColor: 'white'
     },
-    profile : {
+    profile: {
         height: 50,
         width: 50,
         borderWidth: 2.5,
@@ -66,9 +66,9 @@ const styles = StyleSheet.create({
         borderColor: 'green',
         flexDirection: "row",
         justifyContent: "center",
-        alignItems:"center"
+        alignItems: "center"
     },
-    CommunityText : {
+    CommunityText: {
         fontSize: 18,
         fontWeight: '600'
     }
