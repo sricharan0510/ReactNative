@@ -4,8 +4,6 @@ import Screen2 from "./Screen2"
 import Screen3 from "./Screen3"
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import Icon from 'react-native-vector-icons/FontAwesome'
-import { SafeAreaView } from "react-native-safe-area-context";
 
 const Nav = () => {
     const Stack = createStackNavigator();
