@@ -19,7 +19,7 @@ const BottomTab = createBottomTabNavigator();
 const BottomBar = () => {
     const icons = {
         Chats: { focused: 'chatbox-ellipses', unfocused: 'chatbox-ellipses-outline', component: Ionicons },
-        Updates: { focused: 'update', unfocused: 'update', component: MaterialIcons },
+        Updates: { focused: 'circle-double', unfocused: 'circle-double', component: MaterialCommunityIcons },
         Community: { focused: 'account-group', unfocused: 'account-group', component: MaterialCommunityIcons },
         Calls: { focused: 'call-sharp', unfocused: 'call-outline', component: Ionicons }
     };
