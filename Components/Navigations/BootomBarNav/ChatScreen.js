@@ -10,21 +10,21 @@ function ChatScreen() {
     const { name } = route.params;
     return (
         <View style={styles.container}>
-            <ImageBackground source={{ uri: "https://w0.peakpx.com/wallpaper/998/17/HD-wallpaper-green-theme-background-whatsapp-thumbnail.jpg" }} style={styles.msgViewing}>
-            </ImageBackground>
-            <View style={styles.msging}>
-                <View style={styles.inputs}>
-                    <MaterialCommunityIcons name='sticker-emoji' size={25} color={'black'} />
-                    <TextInput style={styles.input} placeholder='Message' />
-                    <View style={styles.camAttView}>
-                        <MaterialIcons name='attach-file' size={25} color={'black'} />
-                        <Ionicons name='camera-outline' size={25} color={'black'} />
+            <ImageBackground source={{ uri: "https://w0.peakpx.com/wallpaper/998/17/HD-wallpaper-green-theme-background-whatsapp-thumbnail.jpg" }} style={styles.img}>
+                <View style={styles.msging}>
+                    <View style={styles.inputs}>
+                        <MaterialCommunityIcons name='sticker-emoji' size={25} color={'black'} />
+                        <TextInput style={styles.input} placeholder='Message' />
+                        <View style={styles.camAttView}>
+                            <MaterialIcons name='attach-file' size={25} color={'black'} />
+                            <Ionicons name='camera-outline' size={25} color={'black'} />
+                        </View>
+                    </View>
+                    <View style={styles.micView}>
+                        <MaterialIcons name='mic' size={25} color={'white'} />
                     </View>
                 </View>
-                <View style={styles.micView}>
-                    <MaterialIcons name='mic' size={25} color={'white'} />
-                </View>
-            </View>
+            </ImageBackground>
         </View>
     )
 }
@@ -35,28 +35,34 @@ const styles = StyleSheet.create({
     },
     msgViewing: {
         flex: 9,
-        // backgroundColor: 'silver'
     },
     msging: {
-        flex: 1,
         flexDirection: 'row',
         alignItems: "center",
         justifyContent: "center",
-        gap: 5
+        gap: 5,
+        position: 'absolute',
+        bottom: 5,
+        width: '100%',
+        padding: 10,
     },
     inputs: {
         flexDirection: 'row',
         alignItems: "center",
         gap: 7,
         height: 50,
-        width: "85%",
+        width: "88%",
         borderColor: 'black',
         borderWidth: 1.5,
         paddingLeft: 8,
-        borderRadius: 50
+        borderRadius: 50,
+        backgroundColor: "white"
     },
     input: {
         width: '65%',
+    },
+    img: {
+        flex: 10,
     },
     micView: {
         height: 50,
