@@ -70,8 +70,8 @@ const date = new Date().getDate() + '/' + (new Date().getMonth() + 1) + '/' + (n
 
 const Screen1 = () => {
   const navigation = useNavigation();
-  const fun = (name) => {
-    navigation.navigate('ChatScreen', {name});
+  const fun = (name, message) => {
+    navigation.navigate('ChatScreen', {name, message});
   }
 
   return (
