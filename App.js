@@ -2,8 +2,8 @@ import { StyleSheet, View } from 'react-native';
 import Main from './Components/Thub/Main'
 import AnimatedComponent from './Components/AnimatedComponent'
 
-import Nav from './Components/Navigations/StackNav/Nav'
-import TBNav from './Components/Navigations/TopBarNav/TBNav';
+// import Nav from './Components/Navigations/StackNav/Nav'
+// import TBNav from './Components/Navigations/TopBarNav/TBNav';
 import BBNav from './Components/Navigations/BootomBarNav/BBNav';
 
 export default function App() {
@@ -17,7 +17,7 @@ export default function App() {
 
       {/* <Nav /> */}
       {/* <TBNav /> */}
-      <BBNav />+
+      <BBNav />
 
     </>
   );
@@ -29,7 +29,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     fontSize: 30,
-    backgroundColor: '#f0f0f0',
+    backgroundColor: '#fff',
   },
 });
 
