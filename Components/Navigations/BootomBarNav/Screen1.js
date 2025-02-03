@@ -48,21 +48,18 @@ const chatlist = [
   {
     id: 8,
     name: 'Vishnu',
-    rollid: '22MH1A4259',
     message: 'Why?',
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbEoFMPnZyYZ7gPhq2vOIQrSpbxMKSYp2qZdGmOH1t_s_yhcIA-yAXljN9cPBL4OyGOKc&usqp=CAU"
   },
   {
     id: 9,
     name: 'Ravi',
-    rollid: '22MH1A4252',
     message: 'Why?',
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4mA-rz_dOFHn0izfA5OziyzVw8qcK3kukfg&s"
   },
   {
     id: 10,
     name: 'Jithendra',
-    rollid: '22MH1A4211',
     message: 'Why?',
     image: "https://assets.gqindia.com/photos/674fd03f346f968d6071a5e3/16:9/w_2560%2Cc_limit/Allu-Arjun-who-has-a-staggering-net-worth-of-Rs-460-crore-has-invested-his-wealth-in-7-successful-brands-Check-out-the-companies-the-Pushpa-2-actor-owns-or-has-invested-in.jpg"
   }
