@@ -6,21 +6,18 @@ const chatlist = [
   {
     id: 1,
     name: 'Praveen',
-    rollid: '22MH1A4220',
     message: 'Hey there!',
     image: "https://documents.iplt20.com/ipl/IPLHeadshot2024/2.png"
   },
   {
     id: 2,
     name: 'Charan',
-    rollid: '22MH1A4250',
     message: 'How are you?',
     image: "https://assets.entrepreneur.com/content/3x2/2000/1598965706-MyPost26.jpg"
   },
   {
     id: 3,
     name: 'Karthik',
-    rollid: '22MH1A4254',
     message: 'Good morning!',
     image: "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202401/pawan-kalyan-og-310249453-1x1.jpg?VersionId=mky0i3aXBvNJxNgkWRdFo9SafUvTiBvi"
   },
