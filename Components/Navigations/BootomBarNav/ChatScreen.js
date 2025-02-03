@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { StyleSheet, Text, TextInput, View, ImageBackground } from 'react-native'
 import { useRoute } from '@react-navigation/native'
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons'
@@ -8,11 +8,13 @@ import Ionicons from 'react-native-vector-icons/Ionicons'
 function ChatScreen() {
     const route = useRoute();
     const { name, message } = route.params;
+    const [msg, setMsg] = useState(message)
     return (
         <View style={styles.container}>
             <ImageBackground source={{ uri: "https://i.pinimg.com/736x/8c/98/99/8c98994518b575bfd8c949e91d20548b.jpg" }} style={styles.img}>
                 <View style={{ height: 40, width: 120, backgroundColor: 'black', borderRadius: 10, margin: 20 }}>
-                    <Text style={{ color: 'white' }}>{message}</Text>
+                    <Text style={{ color: 'white' }}>{msg}</Text>
+                    <Text style={{ color: 'white' }}>4:15PM</Text>
                 </View>
                 <View style={styles.msging}>
                     <View style={styles.inputs}>
