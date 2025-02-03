@@ -7,11 +7,11 @@ const { width, height } = Dimensions.get('screen');
 
 function AudioCalls() {
     const data = [
-        { name: "Praveen", rollid: "22MH1A4220", date: "January 31, 6:18PM", call: "arrow-down-left" },
-        { name: "Charan", rollid: "22MH1A4250", date: "January 28, 10:18AM", call: "arrow-up-right" },
-        { name: "Ravi", rollid: "22MH1A4252", date: "January 15, 6:18PM", call: "arrow-down-left" },
-        { name: "Jithu", rollid: "22MH1A4211", date: "December 31, 6:18PM", call: "arrow-down-left" },
-        { name: "Abhishek", rollid: "22MH1A4257", date: "November 28, 10:18AM", call: "arrow-up-right" },
+        { name: "Praveen", image: "https://documents.iplt20.com/ipl/IPLHeadshot2024/2.png", date: "January 31, 6:18PM", call: "arrow-down-left" },
+        { name: "Charan", image: "https://assets.entrepreneur.com/content/3x2/2000/1598965706-MyPost26.jpg", date: "January 28, 10:18AM", call: "arrow-up-right" },
+        { name: "Ravi", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4mA-rz_dOFHn0izfA5OziyzVw8qcK3kukfg&s", date: "January 15, 6:18PM", call: "arrow-down-left" },
+        { name: "Jayaram", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAqE6hN-ssU_TINQtm-FRtZ12OjEXZQZPE5w&s", date: "December 31, 6:18PM", call: "arrow-down-left" },
+        { name: "Abhishek", image: "https://documents.iplt20.com/ipl/IPLHeadshot2024/57.png", date: "November 28, 10:18AM", call: "arrow-up-right" },
     ]
     return (
         <View style={{ flex: 1,  backgroundColor: 'white'  }}>
@@ -19,7 +19,7 @@ function AudioCalls() {
                 {data.map((item, index) => (
                     <View key={index}>
                         <View style={{ flexDirection: 'row', padding: 16, borderBottomColor: 'grey', borderBottomWidth: 0.3, width: width }}>
-                            <Image source={{ uri: `https://info.aec.edu.in/ACET/StudentPhotos/${item.rollid}.jpg` }} style={{ width: 45, height: 45, borderRadius: 50 }} />
+                            <Image source={{ uri: item.image }} style={{ width: 45, height: 45, borderRadius: 50 }} />
                             <View style={{ flex: 1, flexDirection: "row", justifyContent: "space-between", width: width - 90 }}>
                                 <View style={{ marginLeft: 12, gap: 7 }}>
                                     <Text style={{ fontSize: 18, fontWeight: '600' }}>{item.name}</Text>

@@ -8,13 +8,12 @@ import Ionicons from 'react-native-vector-icons/Ionicons'
 function ChatScreen() {
     const route = useRoute();
     const { name, message } = route.params;
-    const [msg, setMsg] = useState(message)
     return (
         <View style={styles.container}>
-            <ImageBackground source={{ uri: "https://i.pinimg.com/736x/8c/98/99/8c98994518b575bfd8c949e91d20548b.jpg" }} style={styles.img}>
-                <View style={{ height: 40, width: 120, backgroundColor: 'black', borderRadius: 10, margin: 20 }}>
-                    <Text style={{ color: 'white' }}>{msg}</Text>
-                    <Text style={{ color: 'white' }}>4:15PM</Text>
+            <ImageBackground source={{ uri: "https://w0.peakpx.com/wallpaper/538/546/HD-wallpaper-whatsapp-dark-mode-whatsapp.jpg" }} style={styles.img}>
+                <View style={{ height: 40, alignSelf: 'flex-start', backgroundColor: 'white', borderRadius: 10, margin: 20, flexDirection: 'row', gap: 15, justifyContent: 'center', alignItems: "center", padding: 10 }}>
+                    <Text>{message}</Text>
+                    <Text style={{color: 'grey', fontSize: 12 }}>4:15PM</Text>
                 </View>
                 <View style={styles.msging}>
                     <View style={styles.inputs}>
