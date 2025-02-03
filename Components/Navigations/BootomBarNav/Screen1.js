@@ -24,28 +24,24 @@ const chatlist = [
   {
     id: 4,
     name: 'Pranay',
-    rollid: '22MH1A4261',
     message: 'What\'s up?',
     image: "https://www.livemint.com/lm-img/img/2025/01/31/600x338/Allu-Arjun-in-Pushpa-2--Armed-with-a-chip-on-his-s_1737207136296_1738339603079.jpeg"
   },
   {
     id: 5,
     name: 'Abhishek',
-    rollid: '22MH1A4257',
     message: 'Why?',
     image: "https://documents.iplt20.com/ipl/IPLHeadshot2024/57.png"
   },
   {
     id: 6,
     name: 'Manohar',
-    rollid: '22MH1A4245',
     message: 'How?',
     image: "https://media.fashionnetwork.com/cdn-cgi/image/fit=contain,width=1000,height=1000,format=auto/m/cbac/4c59/01d7/f045/4a92/4b31/dd19/c5c6/976a/2300/2300.jpg"
   },
   {
     id: 7,
     name: 'Jayaram',
-    rollid: '22MH1A4216',
     message: 'Why?',
     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAqE6hN-ssU_TINQtm-FRtZ12OjEXZQZPE5w&s"
   },
