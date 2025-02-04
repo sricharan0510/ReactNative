@@ -98,7 +98,7 @@ const BBNav = () => {
         <SafeAreaView style={{ flex: 1, backgroundColor: 'white' }}>
             <NavigationContainer>
                 <Stack.Navigator initialRouteName="Home">
-                    <Stack.Screen name="Home" component={BottomBar} options={{ headerShown: false }} />
+                    <Stack.Screen name="Home" component={BottomBar}  options={{ headerShown: false }} />
                     <Stack.Screen name="ChatScreen" component={ChatScreen}
                         options={({ route }) => ({
                             headerTitle: route.params.name,
