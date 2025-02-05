@@ -5,6 +5,7 @@ import AnimatedComponent from './Components/AnimatedComponent'
 import Nav from './Components/Navigations/StackNav/Nav'
 import TBNav from './Components/Navigations/TopBarNav/TBNav';
 import BBNav from './Components/Navigations/BootomBarNav/BBNav';
+import DNav from './Components/Navigations/DropNav'
 
 export default function App() {
   return (
@@ -17,7 +18,7 @@ export default function App() {
 
       {/* <Nav /> */}
       {/* <TBNav /> */}
-      <BBNav />
+      {/* <BBNav /> */}
 
     </>
   );
