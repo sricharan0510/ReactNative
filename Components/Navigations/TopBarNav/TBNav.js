@@ -36,7 +36,7 @@ const TopBarNav = () => (
                 alignItems: 'center',
             },
             lazy: true
-        }}
+        }} 
     >
         <TopBar.Screen name="Chats" component={Screen1} options={{ tabBarIcon: ({ color }) => <MaterialIcons name="chat" size={25} color={color} /> }} />
         <TopBar.Screen name="Status" component={Screen2} options={{ tabBarIcon: ({ color }) => <MaterialIcons name="update" size={25} color={color} /> }} />

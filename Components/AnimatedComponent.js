@@ -70,10 +70,12 @@ function AnimatedComponent() {
       }).start();
     });
   }
+
   const colorchange = ballBounce.interpolate({
     inputRange: [0, 365],
     outputRange: ["green", "red"],
   })
+  
   return (
     <SafeAreaView style={{ flex: 1 }}>
       <View style={styles.ballDiv}>
