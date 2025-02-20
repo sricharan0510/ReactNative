@@ -2,12 +2,17 @@ import { StyleSheet, View } from 'react-native';
 import Main from './Components/Thub/Main'
 import AnimatedComponent from './Components/AnimatedComponent'
 
+import { SafeAreaView } from 'react-native-safe-area-context';
+
 import Nav from './Components/Navigations/StackNav/Nav'
 import TBNav from './Components/Navigations/TopBarNav/TBNav';
 import BBNav from './Components/Navigations/BootomBarNav/BBNav';
 import DNav from './Components/Navigations/DropNav/DNav'
-import { SafeAreaView } from 'react-native-safe-area-context';
+
+
 import ImgPick from './Components/ImagePicker/ImgPick';
+import Access from './Components/CameraAccess/Access';
+
 
 export default function App() {
   return (
@@ -22,9 +27,12 @@ export default function App() {
       {/* <TBNav /> */}
       {/* <BBNav /> */}
       {/* <DNav /> */}
-      <SafeAreaView>
+
+      {/* <SafeAreaView>
         <ImgPick/>
-      </SafeAreaView>
+      </SafeAreaView> */}
+
+      <Access />
 
     </>
   );
