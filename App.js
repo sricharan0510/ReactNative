@@ -13,6 +13,8 @@ import DNav from './Components/Navigations/DropNav/DNav'
 import ImgPick from './Components/ImagePicker/ImgPick';
 import Access from './Components/CameraAccess/Access';
 
+import FileShare from './Components/Sharing Files/File.Share';
+
 
 export default function App() {
   return (
@@ -32,7 +34,9 @@ export default function App() {
         <ImgPick/>
       </SafeAreaView> */}
 
-      <Access />
+      {/* <Access /> */}
+
+      <FileShare />
 
     </>
   );
