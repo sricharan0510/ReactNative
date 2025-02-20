@@ -6,6 +6,8 @@ import Nav from './Components/Navigations/StackNav/Nav'
 import TBNav from './Components/Navigations/TopBarNav/TBNav';
 import BBNav from './Components/Navigations/BootomBarNav/BBNav';
 import DNav from './Components/Navigations/DropNav/DNav'
+import { SafeAreaView } from 'react-native-safe-area-context';
+import ImgPick from './Components/ImagePicker/ImgPick';
 
 export default function App() {
   return (
@@ -19,7 +21,10 @@ export default function App() {
       {/* <Nav /> */}
       {/* <TBNav /> */}
       {/* <BBNav /> */}
-      <DNav />
+      {/* <DNav /> */}
+      <SafeAreaView>
+        <ImgPick/>
+      </SafeAreaView>
 
     </>
   );
