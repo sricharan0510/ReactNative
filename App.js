@@ -1,22 +1,16 @@
 import { StyleSheet, View } from 'react-native';
 import Main from './Components/Thub/Main'
 import AnimatedComponent from './Components/AnimatedComponent'
-
 import { SafeAreaView } from 'react-native-safe-area-context';
-
 import Nav from './Components/Navigations/StackNav/Nav'
 import TBNav from './Components/Navigations/TopBarNav/TBNav';
 import BBNav from './Components/Navigations/BootomBarNav/BBNav';
 import DNav from './Components/Navigations/DropNav/DNav'
-
-
 import ImgPick from './Components/ImgPick';
 import CamAccessAccess from './ComponentsCamAccess';
-
 import FileShare from './Components/FileShare';
 
-
-export default function App() {
+function App() {
   return (
     <>
       {/* <View style={styles.container}>
@@ -52,4 +46,4 @@ const styles = StyleSheet.create({
   },
 });
 
-
+export default App;
