@@ -5,7 +5,7 @@ import React from 'react';
 import { useState,useRef } from 'react';
 import { Button } from 'react-native-paper';
 
-const Access = () => {
+const CamAccess = () => {
   const [permission , grantpermission] = useCameraPermissions();
   const [allow ,setallow] = useState(false);
   const [face ,setface] = useState('back');
@@ -38,4 +38,4 @@ const Access = () => {
     </SafeAreaView>
   )
 }
-export default Access;
+export default CamAccess;

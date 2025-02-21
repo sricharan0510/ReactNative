@@ -10,10 +10,10 @@ import BBNav from './Components/Navigations/BootomBarNav/BBNav';
 import DNav from './Components/Navigations/DropNav/DNav'
 
 
-import ImgPick from './Components/ImagePicker/ImgPick';
-import Access from './Components/CameraAccess/Access';
+import ImgPick from './Components/ImgPick';
+import CamAccessAccess from './ComponentsCamAccess';
 
-import FileShare from './Components/Sharing Files/File.Share';
+import FileShare from './Components/FileShare';
 
 
 export default function App() {
