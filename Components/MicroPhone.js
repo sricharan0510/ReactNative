@@ -12,7 +12,6 @@ const MicroPhone = () => {
 
     const StartRecord = async () => {
         const { status } = await Audio.requestPermissionsAsync();
-
         if (status === 'granted') {
             const { recording } = await Audio.Recording.createAsync();
             setMyAudio(recording)
