@@ -7,8 +7,9 @@ import TBNav from './Components/Navigations/TopBarNav/TBNav';
 import BBNav from './Components/Navigations/BootomBarNav/BBNav';
 import DNav from './Components/Navigations/DropNav/DNav'
 import ImgPick from './Components/ImgPick';
-import CamAccessAccess from './ComponentsCamAccess';
+import CamAccessAccess from './Components/CamAccess';
 import FileShare from './Components/FileShare';
+import FingerPrint from './Components/FingerPrint';
 
 function App() {
   return (
@@ -30,7 +31,8 @@ function App() {
 
       {/* <Access /> */}
 
-      <FileShare />
+      {/* <FileShare /> */}
+      <FingerPrint />
 
     </>
   );
