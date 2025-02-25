@@ -11,6 +11,7 @@ import CamAccess from './Components/CamAccess';
 import FileShare from './Components/FileShare';
 import FingerPrint from './Components/FingerPrint';
 import MicroPhone from './Components/MicroPhone';
+import Notification from './Components/Notifications';
 
 function App() {
   return (
@@ -33,7 +34,9 @@ function App() {
       {/* <CamAccess /> */}
       {/* <FileShare /> */}
       {/* <FingerPrint /> */}
-      <MicroPhone />
+      {/* <MicroPhone /> */}
+      
+      <Notification />
 
     </>
   );
